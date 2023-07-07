@@ -7,7 +7,7 @@ Django Blog is a Django app that allows you to create and manage blog applicatio
 1. Install the package from PyPI:
 
 ```bash
-pip install drf-blog
+pip install -i https://test.pypi.org/simple/ drf-blog
 ```
 
 2. Add "blog" to the `INSTALLED_APPS` setting in your project's `settings.py` file:
