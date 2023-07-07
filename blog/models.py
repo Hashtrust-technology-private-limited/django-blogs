@@ -1,30 +1,33 @@
-from django.db import models
-from django.db import models
-from django.utils.translation import gettext_lazy as _
-from django.utils import timezone
 from django.contrib.auth import get_user_model
+from django.db import models
+from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
+
 User = get_user_model()
 
+
 def upload_location(instance, filename, *args, **kwargs):
-    file_path = 'blog/{author_id}/{title}-{filename}'.format(
+    file_path = "blog/{author_id}/{title}-{filename}".format(
         author_id=str(instance.author.id), title=str(instance.title), filename=filename
     )
     return file_path
 
+
 class BlogState(models.TextChoices):
     draft = (
-        'draft',
-        _('Draft'),
+        "draft",
+        _("Draft"),
     )
 
     published = (
-        'published',
-        _('Published'),
+        "published",
+        _("Published"),
     )
 
+
 class CreatedUpdatedMixin(models.Model):
-    created_at = models.DateTimeField(verbose_name='Created at', auto_now_add=True)
-    updated_at = models.DateTimeField(verbose_name='Updated at', auto_now=True)
+    created_at = models.DateTimeField(verbose_name="Created at", auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name="Updated at", auto_now=True)
 
     class Meta:
         abstract = True

@@ -12,5 +12,8 @@ class BlogSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     def get_author(self, instance):
-        data = {"id": instance.author.id, "name": f"{instance.author.first_name} {instance.author.last_name}"}
+        data = {
+            "id": instance.author.id,
+            "name": f"{instance.author.first_name} {instance.author.last_name}",
+        }
         return data
