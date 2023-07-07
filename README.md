@@ -2,7 +2,9 @@
 
 Django Blog is a Django app that allows you to create and manage blog applications.
 
-## Quick Start
+# Quick Start
+## Usage
+After following the Quick Start guide, you're now ready to use the Django Blog app in your project. You can start creating, editing, and managing blog posts through the Django admin panel or through the provided APIs.
 
 1. Install the package from PyPI:
 
@@ -49,3 +51,8 @@ python manage.py migrate
 ```
 
 Now you are ready to use the Django Blog app in your project.
+
+# Contributing: 
+Feel free to contribute to this project by submitting issues, fork the project and creating pull requests, or simply by suggesting new features.
+# License
+This project is licensed under the MIT License
