@@ -9,7 +9,15 @@ class BlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = "__all__"
+        fields = [
+            "title",
+            "content",
+            "short_description",
+            "author",
+            "state",
+            "attachment",
+            "read_time",
+        ]
 
     def get_author(self, instance):
         data = {

@@ -9,7 +9,7 @@ After following the Quick Start guide, you're now ready to use the Django Blog a
 1. Install the package from PyPI:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ drf-blog
+pip install drf-blog
 ```
 
 2. Add "blog" to the `INSTALLED_APPS` setting in your project's `settings.py` file:
@@ -52,7 +52,7 @@ python manage.py migrate
 
 Now you are ready to use the Django Blog app in your project.
 
-# Contributing: 
+# Contributing:
 Feel free to contribute to this project by submitting issues, fork the project and creating pull requests, or simply by suggesting new features.
 # License
 This project is licensed under the MIT License

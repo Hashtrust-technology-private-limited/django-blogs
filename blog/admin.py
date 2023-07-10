@@ -5,6 +5,10 @@ from blog.models import Blog
 
 
 class BlogAdmin(SummernoteModelAdmin):
+    """
+    Admin configuration for the Blog model.
+    """
+
     def get_content(self, obj):
         return obj.content[:120]
 
